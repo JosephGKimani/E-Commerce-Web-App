@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
 import "./FoodItem.css";
-import { assets } from "../../assets/assets";
+import { assets } from "../../assets/assets.js";
 import { StoreContext } from "../../Context/StoreContext";
+
 
 const FoodItem = ({ id, name, price, description, image }) => {
  
@@ -17,7 +18,7 @@ const FoodItem = ({ id, name, price, description, image }) => {
             }
             src={assets.add_icon_white}
             alt=""
-          />
+          ></img>
         
         : 
           <div className="food-item-counter">
